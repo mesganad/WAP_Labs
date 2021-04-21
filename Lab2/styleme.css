@@ -1,0 +1,25 @@
+#container{
+ width: 800px;
+ background: #5D739C;
+ margin-top: 0px;
+ padding-top: 0px;
+ margin-left: 150px;
+}
+
+h2,h3{
+    font-family: cursive,serif;
+    color:lightblue;
+    padding-left: 20px;
+}
+
+p, ol li,ul li,#html,#css{
+    color:white;
+    padding-left:20px;
+}
+a:active{
+    color: violet;
+}
+a:hover{
+    color:red;
+}
+
