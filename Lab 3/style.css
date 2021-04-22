@@ -1,0 +1,149 @@
+body,html{
+
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 50% 20%;
+    grid-template-columns: auto 20%;   
+    grid-template-areas: 
+    "header sidebar"
+    "content sidebar "
+    "footer sidebar";
+}
+body a:hover{
+  font-size: 20px;
+  font-weight: bold;
+  color:#b314db;
+}
+header{
+    grid-area: header;
+    justify-self: start;
+    align-self: start;
+    background: lightgrey;
+    width: 100%;
+    height: 100%;
+}
+article{
+    margin: 0px;
+    grid-area: content;
+    justify-self: start;
+    justify-self: start;
+    background: rgb(241, 238, 238);
+    align-self: start;
+    padding-top: 0%;
+}
+aside{
+    grid-area: sidebar;
+    background: rgb(165, 163, 163);
+}
+
+footer{
+    margin-bottom: 0px;
+    grid-area: footer;
+    text-justify:start ;
+    align-self: end;
+    background-color: lightgray;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+/* sidebar base styles */
+aside {
+    background: #E7E6EB;
+  }
+  aside h3 {
+    display: none;
+  }
+  aside a {
+    color: #607476;
+    text-decoration: none;
+  }
+  aside a:hover, .sidebar a:focus {
+      color: #49968e;
+    }
+    asider ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  a {
+    color: #0d8ba1;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+  }
+    a:visited {
+      color: #1a5952;
+    }
+    a:hover, a:focus {
+      color: #0599c2;
+      text-decoration: underline;
+    }
+
+
+    h1, h2 {
+        padding: 0 10%;
+        margin: 0;
+        color: #fff;
+        font-weight: normal;
+      }
+      h1 {
+        padding-top: 0;
+        padding-bottom: 5px;
+        border-bottom: none;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 3.2em;
+        text-transform: uppercase;
+      }
+      h1::before {
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        content: "";
+        width: 80px;
+        height: 80px;
+        margin: -20px 20px 0 0;
+        background: url(enso.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0.6;
+      }
+      h2 {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 30px;
+        border-top: none;
+        color: rgba(255,255,255,0.6);
+        font-size: 1.6em;
+        font-style: italic;
+      }
+      h2::before {
+        content: " ";
+        padding: 50px;
+      }
+      h3 {
+        margin: 2em 0 0 0;
+        color: #2e484c;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 1.8em;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      p {
+        margin: 0.75em 0;
+        line-height: 2;
+      }
+      
+
+
+      
+  
+  
