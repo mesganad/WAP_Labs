@@ -10,8 +10,7 @@
         this.size = 0;
     }
  
-    // adds an element at the end
-    // of list
+    // adds an element    
     Linkedlist.prototype.add =function(element) {
         // creates a new node
         let node = new Node(element);
@@ -26,8 +25,7 @@
         else {
             current = this.head;
  
-            // iterate to the end of the
-            // list
+            // iterate to the end of the list
             while (current.next) {
                 current = current.next;
             }
@@ -88,17 +86,16 @@
  
 
  
-// creating an object for the
-// Linkedlist class
-let ll = new Linkedlist();
+// creating an object 
+let linkedList = new Linkedlist();
 
 
  
 // adding more elements to the list
-ll.add(1);
-ll.add(2);
-ll.add(3);
-ll.printList();
+linkedList.add(1);
+linkedList.add(2);
+linkedList.add(3);
+linkedList.printList();
  
-ll.removeElement(2);
-ll.printList();
+linkedList.removeElement(2);
+linkedList.printList();
