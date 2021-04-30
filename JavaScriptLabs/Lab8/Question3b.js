@@ -1,27 +1,27 @@
 
-    
-let Linkedlist= {
-        head : null,
-        size : 0,
-    
-         Node:{
-            element : this.element,
-            next : null,
-        },
+
+let Linkedlist = {
+    head: null,
+    size: 0,
+
+    Node: {
+        element: this.element,
+        next: null,
+    },
 
     // adds an element at the end
     // of list
-    add:function(element) {
+    add: function (element) {
         // creates a new node
-       
-        let node=Object.create(this.Node);
+
+        let node = Object.create(this.Node);
 
         // to store current node
         let current;
 
         // if list is Empty add the
         // element and make it head
-        if (this.head == null){
+        if (this.head == null) {
             this.head = node;
         }
         else {
@@ -36,15 +36,15 @@ let Linkedlist= {
             // add node
             current.next = node;
         }
-       this.size++;
-        
+        this.size++;
+
     },
 
-    removeElement:function(element) {
+    removeElement: function (element) {
         let current = this.head;
         let prev = null;
         while (current != null) {
-           
+
             if (current.element === element) {
                 if (prev == null) {
                     this.head = current.next;
@@ -64,21 +64,21 @@ let Linkedlist= {
 
 
     // checks the list for empty
-    isEmpty:function() {
+    isEmpty: function () {
         return this.size == 0;
     },
 
     // gives the size of the list
-    size_of_list:function() {
-        console.log('Size is: '+this.size);
+    size_of_list: function () {
+        console.log('Size is: ' + this.size);
     },
 
 
     // prints the list items
-    printList:function() {
+    printList: function () {
         let curr = this.head;
         let str = [];
-        let i=0;
+        let i = 0;
         while (curr) {
             str.push(curr.element);
             curr = curr.next;
