@@ -15,7 +15,7 @@ let Linkedlist = {
         // creates a new node
 
         let node = Object.create(this.Node);
-
+        node.element = element;
         // to store current node
         let current;
 
