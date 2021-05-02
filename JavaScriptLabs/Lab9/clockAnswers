@@ -1,0 +1,21 @@
+Answer below questions based on Clock constructor function.
+Also add a line of code that will stop the clock after 10 ticks
+setTimeout(()=>clock.stop(), 10000);
+
+What is the inner function of the constructor function?
+render
+
+What is the local variable of the constructor function?
+timer
+
+What is the clock “interface” returned by the constructor function?
+An object of Clock
+
+What are the closures?
+No
+
+What are the private variables and functions?
+timer, render
+
+What are the public methods?
+stop,start
