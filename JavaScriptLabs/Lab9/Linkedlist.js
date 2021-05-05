@@ -31,7 +31,6 @@ class LinkedList {
     removeElement(element) {
         let current = this.head;
         let prev = null;
- 
         // iterate over the list
         while (current != null) {
             // comparing element with current
