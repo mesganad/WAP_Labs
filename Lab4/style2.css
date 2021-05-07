@@ -8,7 +8,7 @@ body{
     "header header header header"
     "content . . ."
     "footer footer footer footer";
-    border: 2px solid grey;
+    border: 10px solid grey;
 }
 
 header{
@@ -33,6 +33,7 @@ footer{
 
 .formarea{
     display: flex;
+    flex:1;
     border-radius: 3px;
 }
 .meal{
