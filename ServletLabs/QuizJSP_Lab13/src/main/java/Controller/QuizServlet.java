@@ -25,6 +25,7 @@ public class QuizServlet extends HttpServlet {
             session.setAttribute("quiz", quiz);
         }
 
+        //String question=quiz.getNextQuestion();
         if(quiz.endOfQuestion())
             request.getRequestDispatcher("result.jsp").forward(request, response);
         else
